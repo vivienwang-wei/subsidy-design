@@ -2,8 +2,6 @@
 #include"definition.h"
 #include"model.h"
 
-// Command line arguments are required.
-
 int main(int argc, char** argv) {
 	try {
 		ScenarioSet SS;
