@@ -2,10 +2,10 @@
 
 #include"Header.h"
 
-constexpr auto NFloat = 0;//保留小数位数
-constexpr auto RoundUpDown = true;//true为向上取整，false为向下取整
+constexpr auto NFloat = 0;
+constexpr auto RoundUpDown = true;
 
-constexpr auto NMAX = 16;			// A upper bound on the number of nodes in the graph.
+constexpr auto NMAX = 16;
 constexpr auto Nseq = 5000;
 constexpr auto Nty = 6;
 
@@ -79,7 +79,6 @@ void read2(istream &ins, T &cont) {
 }
 
 
-// transfer string to number
 template<typename T>
 void strToNum(const string &str, T &num) {
 	stringstream ss;
@@ -88,7 +87,6 @@ void strToNum(const string &str, T &num) {
 }
 
 
-// transfer number to string
 template<typename T>
 string numToStr(const T &num) {
 	string str;
@@ -104,9 +102,7 @@ class thread_guard
 private:
 	thread &t;
 public:
-	//构造函数
 	explicit thread_guard(thread &myT) :t(myT) {}
-	//析构函数
 	~thread_guard()
 	{
 		if (t.joinable())
