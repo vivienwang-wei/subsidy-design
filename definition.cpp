@@ -9,7 +9,6 @@ void printErrorAndExit(const string &str, const exception &exc) {
 }
 
 
-//程序已运行时间
 double runTime(const clock_t &start)
 {
 	clock_t finish = clock();
